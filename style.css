@@ -1,0 +1,216 @@
+body {
+	background-color: rgba(232, 233, 232, 1);
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: rgba(25,32,48,0.9);
+	font-family: 'Raleway', sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	color: white;
+	font-size: 115%;
+	z-index: 10;
+}
+
+#hamburger {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+h3 {
+	float: left;
+	margin-left: 10px;
+}
+
+h5 {
+	position: relative;
+	margin-left: 10px;
+	margin-top: 29px;
+	float: left;
+}
+
+header ul {
+	float: right;
+	margin: 28px 60px 0 0;
+}
+
+header li {
+	display: inline;
+	padding-left: 50px;
+}
+
+header ul a {
+	color: white;
+}
+
+.icon img{
+	width: 40px;
+	margin-left: 48%;
+	margin-top: 3%;
+}
+
+.swipe {
+	overflow: hidden;
+	position: relative;
+	max-width: 800px;
+	width: 100%;
+	margin: 75px auto 0;
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.swipe-wrap > div {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.swipe .nav.next {
+	right: 0;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+.swipe .nav.prev {
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.swipe-wrap img {
+	width: 100%;
+	opacity: 0.5;
+}
+
+h1 {
+	position: absolute;
+	font-size: 5.5em;
+	font-family: 'Raleway', sans-serif;
+	top: 25%;
+	left: 7%;
+	text-align: center;
+}
+
+.box {
+	position: relative;
+	margin: 15px auto;
+	padding: 10px;
+	color: black;
+	line-height: 1.5em;
+	width: 80%;
+	height: 100%;
+	border: 5px solid black;
+	text-align: justify;
+}
+
+.box h2 {
+	font-size: 3em;
+	margin-right: 55%;
+	text-align: center;
+}
+
+.box img {
+	width: 180px;
+	border-radius: 100px;
+	border: 2px solid rgba(36, 40, 52, 1);
+	margin: 30px;
+	float: left;
+}
+
+.newsbox {
+	width: 40%;
+	height: 220px;
+	margin: 0%;
+	padding-left: 9%;
+	display: inline-block;
+	border: 1px solid black;
+	background-color: rgba(0,0,0,.8);
+
+}
+
+.newsbox p {
+	color: white;
+	font-family: Georgia;
+	font-size: 1.5em;
+	float: left;
+	text-align: center;
+	margin-left: -60px;
+	margin-right: 35px;
+	margin-top: 1px;
+}
+
+.newsbox:hover {
+	background-color: rgba(104, 167, 57, 1);
+	color: white;
+}
+
+.newsbox a {
+	line-height: 1.5em;
+}
+
+.2 h2 {
+	font-size: 3em;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 2px solid white;
+}
+
+.break {
+	display: none;
+}
+
+@media (max-width: 855px) {
+	ul {
+		display: none;
+	}
+	#hamburger {
+		display: block;
+	}
+}
+
+
+@media (max-width: 760px) {
+	h1 {
+		font-size: 3.2em;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media (max-width: 690px) {
+	.icon img {
+		margin-left: 43%;
+	}
+}
+
+@media (max-width: 400px) {
+	.break {
+		display: block;
+	}
+	h3 {
+		margin-left: 10px;
+		margin-top: 0px;
+	}
+	h5 {
+		float: left;
+		margin-left: -207px;
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	h1 {
+		font-size: 2.2em;
+	}
+}

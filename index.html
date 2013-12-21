@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+    <title>Steven London ESQ</title>
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function() {
+        jQuery("a").click(function() {
+          if(this.hash) {
+            var hash = this.hash.substr(1);
+
+            var $toElement = $("a[name="+hash+"]");
+            console.log($toElement)
+            var toPosition = $toElement.position().top;
+
+            jQuery("body,html").animate({
+              scrollTop : toPosition
+            },700)
+
+            return false
+          }
+        });
+      });
+    </script>
+    </script>
+  </head>
+
+  <body>
+
+  <!-- 1 -->
+
+    <a name="1"></a>
+    <header>
+    <div id="name">
+      <h3>Steven London Esq.</h3>
+      <div class="break">
+        <br>
+      </div>
+    </div>
+      <h5>Attorney at Law</h5>
+      <ul id="navbar">
+        <li><a href="#1">Home</a></li>
+        <li><a href="#2">Bio</a></li>
+        <li><a href="#3">News</a></li>
+        <li><a href="#4">Contact</a></li>
+      </ul>
+      <div id="hamburger">
+        <img src="images/hamburger.png">
+      </div>
+    </header>
+
+    <div class="demo-wrapper">
+      <div id="slider" class="swipe">
+        <div class="swipe-wrap">
+          <div><img src="images/court2.jpg" alt="Court Sketch 2"></div>
+        </div>
+        <h1>Steven London Esq.</h1>
+      </div>
+    </div>
+
+  <!-- End 1 -->
+
+  <!-- 2 -->
+
+  <a name = "2"></a>
+    <div class="icon">
+      <img src = "images/scales.png">
+    </div>
+
+    <div class="box">
+      <img src="images/steve.jpg">
+      <h2>BIO</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></a>
+    </div>
+
+  <!-- End 2 -->
+
+  <!-- 3 -->
+
+  <a name="3">
+    <div class="icon">
+      <img src = "images/scales.png">
+    </div>
+
+   <div class="box">
+      <h2>NEWS</h2>
+
+        <div class="newsbox">
+          <img src="images/timeslogo.png" style="width: 80%; border: none; margin: 0px">
+          <p><a href="http://www.nytimes.com/2000/11/20/nyregion/family-law-collides-with-immigration-and-welfare-rules.html?pagewanted=all&src=pm" target="_blank" style="color:white">Family Law Collides With Immigration and Welfare Rules</a></p>
+          <p style="text-align: center; font-size: 1em">by Nina Bernstein (November 20, 2000)</p>
+        </div>
+
+        <div class="newsbox">
+          <img src="images/timeslogo.png" style="width: 80%; border: none; margin: 0px">
+          <p><a href="http://www.nytimes.com/1999/11/21/nyregion/adoption-agency-thwarted-father-s-rights-judge-says.html" target="_blank" style="color:white">Adoption Agency Thwarted Father's Rights, Judge Says</a></p>
+          <p style="text-align: center; font-size: 1em">by Katherine Finkelstein (November 21, 1999)</p>
+        </div>
+    </div>
+
+    <!-- End 3 -->
+
+    <!-- 4 -->
+
+    <a name="4">  
+     <div class="icon">
+      <img src = "images/scales.png">
+     </div>
+
+   <div class="box">
+      <h2>CONTACT</h2>
+       
+      <form name="contact-form" action="send-mail.php" method="POST">
+        <label for="field_name">Name:</label>
+        <br>
+        <input type="text" id="field_name" name="sender_name">
+        <br>
+        <label for="field_email">Your e-mail:</label>
+        <br>
+        <input type="text" id="field_email" name="sender_email">
+        <br>
+        <label for="field_message">Message:</label>
+        <br>
+        <textarea id="field_message" name="sender_message" style="width:280px; height: 135px"></textarea>
+        <input type="submit" name="send_message" value="Submit">
+      </form>
+    </div>
+
+    <!-- End 4 -->
+</body>
+
+</html>
